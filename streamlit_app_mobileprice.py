@@ -12,7 +12,7 @@ import streamlit as st
 from xgboost import XGBRegressor
 
 # loading the trained model
-pkl_file = open('XGBoost.pkl', 'rb')
+pkl_file = open('XGBoost_Sahil33.pkl', 'rb')
 regressor = pickle.load(pkl_file)
 
 @st.cache_data()
@@ -113,7 +113,7 @@ def prediction(Manufacturer, Category,Screen_Size, CPU,RAM, GPU, OS, Weight,  To
 def main():
     # front end elements of the web page
     html_temp = """
-    <div style ="background-color:yellow;padding:13px">
+    <div style ="background-color:#82A0D8;padding:13px">
     <h1 style ="color:black;text-align:center;"> Pragyan AI Smart Phone Price Prediction ML App</h1>
     </div>
     """
