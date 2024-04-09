@@ -12,7 +12,7 @@ import streamlit as st
 from xgboost import XGBRegressor
 
 # loading the trained model
-pkl_file = open('XGBoost.pkl', 'rb')
+pkl_file = open('XGBoost_model.pkl', 'rb')
 regressor = pickle.load(pkl_file)
 
 @st.cache_data()
